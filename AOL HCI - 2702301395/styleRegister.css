@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poopins', sans-serif;
+}
+
+.background{
+    /* background-image: url("./img/background.jpg"); */
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    /* background-color: rgb(255, 255, 255);
+    opacity: 0.7; */
+} 
+
+.form-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(255, 255, 255);
+    opacity: 0.7; */
+}
+
+.left{
+    margin-top: 5%;
+    width: 40%;
+}
+
+.right{
+    width: 60%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+input, button{
+    margin : 15px 0px;
+    height: 25px;
+}
+
+.agree{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(216, 121, 43);
+    color: rgb(85, 85, 85);
+}
+
+button{
+    width: 70%;
+    background-color: rgb(180, 88, 26);
+    border-radius: 20px;
+}
+
+.right .title{
+    color: black;
+}
+
+
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poopins', sans-serif;
+} */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #7b0000;
+}
+
+header .logo{
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.82;
+    /* font-family: 'Brush Script MT', cursive; */
+    
+}
+
+button a{
+    text-decoration: none;
+
+}
+
+/* header .nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .nav li a:hover{
+    border-top: 2px solid white;
+    border-radius: 3px;
+    background-color: #c03939;
+} */
+
+#teks {
+    display: none;
+    margin-left: 40px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1050px) {
+    .img {
+        width: 190px;
+        position: relative;
+        align-items: center;
+        display: flex;
+    }
+    .right {
+        position: relative;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .form-container {
+        display: inline;
+    }
+    form {
+        display: inline;
+    }
+    header {
+        min-width: 250px;
+        width: 100%;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+
+    .logo {
+        flex-direction: column; 
+        text-align: center;
+    }
+    #teks {
+       margin-left: 0px;
+       margin-right: 10px;
+        display: none;
+        margin-top: 10px; 
+        text-align: center; 
+    }
+
+    
+}
+
+.agree p{
+    margin-left: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#logoo {
+    cursor: pointer;
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#logoo:active{
+    color: rgb(255, 140, 140);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styleRegister.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header>
+        <!-- <a href="#" class="logo" id="logoo">Hythering</a> -->
+        <!-- <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul> -->
+
+        <!--  -->
+        <div class="logo">
+            <a id="logoo">Hythering</a>
+            
+            <div id="teks">"If You Can't Stop Thinking About it... <strong>Buy it</strong>"</div>
+        </div>
+
+    </header>
+
+    <div class="background">
+        <div class="form-container">
+            <div class="left">
+                <img src="hy.png" class="img">
+            </div>
+
+            <div class="right">
+                <div class="title" >
+                    <h2>Register</h2>
+                </div>
+
+                <form action="home.html" onsubmit="formValidation(event)" method="get">
+                    <input type="text" name="" id="username" placeholder="Username">
+                    <input type="email" name="" id="email" placeholder="Email">
+                    <input type="password" name="" id="password" placeholder="Password">
+                    <input type="password" name="" id="confirm-password" placeholder="Confirm Password">
+                    <div class="agree">
+                        <input type="checkbox" name="" id="agree-checkbox">
+                        <p>
+                            Agree to terms and condition
+                        </p>
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <script src="form_validation.js"></script>
+    <script src="angka.js"></script>
+</body>
+</html>

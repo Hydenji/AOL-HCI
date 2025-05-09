@@ -1,0 +1,478 @@
+
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+    font-family:'Poopins', sans-serif;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #7b0000;
+}
+
+header .logo{
+    line-height: 1.5;
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header .nav{
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+
+
+header .nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .nav li a:hover{
+    border-top: 2px solid white;
+    border-radius: 3px;
+    background-color: #c03939;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+  }
+
+  /*  */
+
+  #kota{
+    background-image: url(https://www.bhmpics.com/downloads/aesthetic-blue-sky-laptop-Wallpapers/9.cb6221d296b6e2fe852956287cb2146f.jpg);
+    /* background-image: url(https://i.pinimg.com/564x/8b/8c/05/8b8c053356d49b3f6c03ab55cbd4b4d3.jpg); */
+    background-size: cover;
+    background-blend-mode:darken;
+  }
+
+  #jir{
+    color: rgb(207, 205, 205);
+  }
+  /*  */
+
+  h1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    padding-bottom: .5rem;
+  }
+
+  .desc{
+    color: rgb(94, 94, 94);
+    text-align: center;
+  }
+
+  /*  */
+
+  #joko{
+    background:url(tes.png);
+    background-size: cover;
+    background-position: right;
+    background-blend-mode:hard-light;
+  }
+
+  #jokoo{
+    color: rgba(253,171,33,255);
+    font-weight:bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(159,89,55,255);
+    
+    
+    
+  }
+  /*  */
+
+  #wataw{
+    background: url(https://i.pinimg.com/564x/75/0f/e8/750fe8a7a33c6c70291690a36de34b00.jpg);
+    background-size: cover;
+    background-position: bottom;
+    
+  }
+
+  #wtw{
+    color: rgb(221, 190, 245);
+  }
+
+  /*  */
+  #math{
+    background: url(https://i.pinimg.com/564x/b8/38/57/b838574de7d2219b2228e730a392d20c.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-position: left;
+    
+  }
+
+  #turtle{
+    color: rgb(255, 255, 255);
+  }
+
+  /*  */
+
+  #nono{
+    background:url(https://i.pinimg.com/564x/fc/3b/e2/fc3be2b6ba66e43f180dab1aca6c47f1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #no{
+    color: #489b15;
+  }
+
+  /*  */
+  
+  .mySlides {
+    display: none;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    border: solid rgb(193, 193, 193);
+  }
+  
+  .slide-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slide-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  
+  .slide-image img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .job {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .text {
+    flex: 2;
+    padding: 20px;
+    background: white;
+    border-radius: 0 100px 100px 0; 
+    color: #333;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .numbertext {
+    color: #fff6f6;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    .slide-content {
+      flex-direction: column;
+    }
+
+  
+    .slide-content img {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  
+    .text {
+      text-align: center;
+      border-radius: 10px;
+    }
+  
+    .prev {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .next {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  }
+  
+  
+  
+
+@media screen and (max-width: 780px) {
+    header{
+        position: sticky;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+
+    .nav {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+  }
+}
+
+ /* footer */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ .footer-area {
+     margin-top: 50px; 
+     padding: 50px 20px; 
+     background: #7b0000;
+     color: white;
+     position: relative;
+ }
+ 
+ .main {
+     width: 100%;
+     max-width: 1400px;
+     margin: 0 auto;
+ }
+ 
+ .footer {
+     display: flex;
+     flex-wrap: wrap; 
+     gap: 20px; 
+ }
+ 
+ .single-footer {
+     flex: 1 1 calc((100% - 60px) / 4); 
+     margin-bottom: 20px; 
+ }
+ 
+ .single-footer:first-child {
+     flex: 1 1 calc(100% - 40px); 
+ }
+ 
+ .single-footer h4 {
+     text-transform: capitalize;
+     font-size: 20px; 
+     margin-bottom: 15px; 
+ }
+ 
+ .footer-social a {
+     color: white;
+     border: 1px solid white;
+     width: 40px;
+     height: 40px;
+     display: inline-block;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50%;
+     margin-right: 10px;
+ }
+ 
+ .footer-social {
+     margin-top: 15px; 
+ }
+ 
+ .single-footer ul {
+     list-style: none;
+     padding-left: 0;
+ }
+ 
+ .single-footer ul li {
+     margin-bottom: 8px; 
+     position: relative;
+     padding-left: 20px;
+ }
+ 
+ .single-footer ul li a {
+     text-decoration: none;
+     text-transform: capitalize;
+     color: #ffffff;
+ }
+ 
+ .single-footer ul li a i {
+     position: absolute;
+     left: 0;
+     top: 1px;
+ }
+ 
+ .copy {
+     text-align: center;
+     text-transform: capitalize;
+     margin-top: 30px; 
+ }
+ 
+ @media (max-width: 600px) {
+     .single-footer {
+         flex: 1 1 100%; 
+     }
+
+     .footer-area{
+        min-width: 360px;
+        min-height: auto;
+     }
+ }
+
+ /*  */
+ 
+.footer-social a:hover{
+  border:  1px rgb(255, 63, 63) solid;
+}
+
+.fa-youtube-play{
+  color: red;
+}
+
+.fa-youtube-play:active, .fa-twitter:active, .fa-instagram:active{
+  color: white;
+}
+
+.fa-linkedin:active{
+  color: rgb(119, 183, 255);
+}
+
+.fa-twitter{
+  color: rgb(0, 179, 255);
+}
+
+.fa-instagram{
+  text-decoration: none;
+  color: #c203b5;
+}
+
+/*  */
+
+.single-footer ul li a:hover {
+  text-decoration: underline;
+  color: beige;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.fa-map-marker{
+  color: red;
+}
+
+.fa-phone{
+  color: rgb(3, 181, 3);
+}
+
+.fa-envelope{
+  color: rgb(246, 189, 92);
+}
+
+.fa-globe{
+  color: rgb(118, 168, 253);
+}
+
+.fa-envelope:active, .fa-globe:active, .fa-phone:active, .fa-map-marker:active{
+  color: rgb(255, 255, 255);
+}
+
+/*  */
